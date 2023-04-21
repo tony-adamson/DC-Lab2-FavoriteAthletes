@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0262666029F29D52004AEF9F /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0262665F29F29D52004AEF9F /* Athlete.swift */; };
+		0262666229F29E32004AEF9F /* AthleteFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0262666129F29E32004AEF9F /* AthleteFormViewController.swift */; };
 		1830B16623A3064200FF29B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830B16523A3064200FF29B5 /* AppDelegate.swift */; };
 		1830B16823A3064200FF29B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830B16723A3064200FF29B5 /* SceneDelegate.swift */; };
 		1830B16D23A3064200FF29B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1830B16B23A3064200FF29B5 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0262665F29F29D52004AEF9F /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		0262666129F29E32004AEF9F /* AthleteFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteFormViewController.swift; sourceTree = "<group>"; };
 		1830B16223A3064200FF29B5 /* FavoriteAthlete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteAthlete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1830B16523A3064200FF29B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1830B16723A3064200FF29B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				1830B17923A3067E00FF29B5 /* AthleteTableViewController.swift */,
-				0262665F29F29D52004AEF9F /* Athlete.swift */,
+				0262666129F29E32004AEF9F /* AthleteFormViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -51,6 +53,7 @@
 		0262665E29F29D28004AEF9F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0262665F29F29D52004AEF9F /* Athlete.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0262666229F29E32004AEF9F /* AthleteFormViewController.swift in Sources */,
 				1830B16623A3064200FF29B5 /* AppDelegate.swift in Sources */,
 				1830B16823A3064200FF29B5 /* SceneDelegate.swift in Sources */,
 				1830B17A23A3067E00FF29B5 /* AthleteTableViewController.swift in Sources */,
