@@ -9,10 +9,14 @@ import UIKit
 
 class AthleteFormViewController: UIViewController {
 
-    @IBOutlet weak var nameTF: UITextField!
-    @IBOutlet weak var ageTF: UITextField!
-    @IBOutlet weak var leagueTF: UITextField!
-    @IBOutlet weak var teamTF: UITextField!
+    struct PropertyKeys {
+        static let unwindToListSegue = "unwindToAthleteTableViewController"
+    }
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var leagueTextField: UITextField!
+    @IBOutlet weak var teamTextField: UITextField!
     
     var athlete: Athlete?
     
@@ -36,16 +40,23 @@ class AthleteFormViewController: UIViewController {
 
     func updateView() {
         guard let athlete = athlete else { return }
+        
+        nameTextField.text = athlete.name
+        ageTextField.text = String(athlete.age)
+        leagueTextField.text = athlete.league
+        teamTextField.text = athlete.team
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {
-        guard let name = nameTF.text,
-            let ageString = ageTF.text,
+        guard let name = nameTextField.text,
+            let ageString = ageTextField.text,
             let age = Int(ageString),
-            let league = leagueTF.text,
-            let team = teamTF.text else { return }
+            let league = leagueTextField.text,
+            let team = teamTextField.text else { return }
         
             athlete = Athlete(name: name, age: age, league: league, team: team)
+        
+        performSegue(withIdentifier: PropertyKeys.unwindToListSegue, sender: self)
     }
     
     /*

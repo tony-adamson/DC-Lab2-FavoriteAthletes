@@ -142,17 +142,15 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="vBG-05-QLL"/>
                     <connections>
-                        <outlet property="ageTF" destination="5BH-RZ-lV3" id="w3H-DJ-fsz"/>
-                        <outlet property="ageTextField" destination="5BH-RZ-lV3" id="1R7-Jn-nje"/>
-                        <outlet property="leagueTF" destination="Qwm-lN-Kse" id="r2B-dr-1rN"/>
-                        <outlet property="leagueTextField" destination="Qwm-lN-Kse" id="gYY-f1-HQF"/>
-                        <outlet property="nameTF" destination="9Ms-Uu-Heg" id="J19-dq-Pgg"/>
-                        <outlet property="nameTextField" destination="9Ms-Uu-Heg" id="VJo-C5-mAK"/>
-                        <outlet property="teamTF" destination="uqw-ia-7EH" id="giO-7X-JbV"/>
-                        <outlet property="teamTextField" destination="uqw-ia-7EH" id="06a-T2-sLw"/>
+                        <outlet property="ageTextField" destination="5BH-RZ-lV3" id="w3H-DJ-fsz"/>
+                        <outlet property="leagueTextField" destination="Qwm-lN-Kse" id="r2B-dr-1rN"/>
+                        <outlet property="nameTextField" destination="9Ms-Uu-Heg" id="J19-dq-Pgg"/>
+                        <outlet property="teamTextField" destination="uqw-ia-7EH" id="giO-7X-JbV"/>
+                        <segue destination="NqD-YE-U2f" kind="unwind" identifier="unwindToAthleteTableViewController" unwindAction="unwindToAthleteTableViewController:" id="tuq-jv-q0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRJ-p2-DTp" sceneMemberID="firstResponder"/>
+                <exit id="NqD-YE-U2f" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1860" y="139"/>
         </scene>
